@@ -1,0 +1,32 @@
+import * as React from "react";
+const SvgBatteryDeadOutline = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="battery-dead-outline_svg__ionicon"
+    viewBox="0 0 512 512"
+    {...props}
+  >
+    <rect
+      width={400}
+      height={224}
+      x={31}
+      y={144}
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="square"
+      strokeMiterlimit={10}
+      strokeWidth={32}
+      rx={45.7}
+      ry={45.7}
+    />
+    <path
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeMiterlimit={10}
+      strokeWidth={32}
+      d="M479 218.67v74.66"
+    />
+  </svg>
+);
+export default SvgBatteryDeadOutline;
