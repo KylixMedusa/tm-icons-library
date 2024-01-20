@@ -1,17 +1,21 @@
 {
   "name": "tm-icons-library",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
   "umd:main": "dist/bundle.umd.js",
-  "types": "dist/types/index.d.ts",
+  "types": "types/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "make-icons": "npx @svgr/cli --out-dir src/icons --filename-case kebab -- utils/svg-icons",
     "generate-types": "node utils/generateTypes.js",
     "build": "rollup -c"
   },
+  "files": [
+    "dist",
+    "types"
+  ],
   "keywords": [],
   "author": "",
   "license": "MIT",
@@ -23,8 +27,8 @@
   "dependencies": {
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
@@ -33,11 +37,11 @@
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "rollup": "^2.79.1",
     "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.36.0",
     "typescript": "^5.3.3"
   }
 }

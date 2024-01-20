@@ -1,9 +1,9 @@
 import { terser } from 'rollup-plugin-terser';
-import typescript from 'rollup-plugin-typescript2';
 
 import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
+import typescript from '@rollup/plugin-typescript';
 
 export default {
   input: "src/index.tsx", // Replace with your main file
@@ -32,9 +32,9 @@ export default {
       babelHelpers: "bundled",
       exclude: ["node_modules/**", "utils/**"],
     }),
+    typescript(),
     resolve(),
     commonjs(),
-    typescript({ useTsconfigDeclarationDir: true }),
     terser(), // Minify the output (optional)
   ],
 };

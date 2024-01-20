@@ -1,7 +1,7 @@
 import React from 'react';
 
+import { IconName } from '../types/IconTypes';
 import * as Icons from './icons';
-import { IconName } from './IconTypes';
 import { toPascalCase } from './toPascalCase';
 
 interface Props {

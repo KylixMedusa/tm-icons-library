@@ -7,6 +7,8 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
     "moduleResolution": "node",
@@ -14,5 +16,6 @@
     "isolatedModules": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "utils"]
+  "include": ["src", "types"],
+  "exclude": ["node_modules/**", "utils/**", "src/icons/**"]
 }
