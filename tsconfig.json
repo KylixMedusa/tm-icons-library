@@ -16,6 +16,6 @@
     "isolatedModules": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "types"],
+  "include": ["src"],
   "exclude": ["node_modules/**", "utils/**", "src/icons/**"]
 }

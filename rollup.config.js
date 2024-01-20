@@ -32,7 +32,18 @@ export default {
       babelHelpers: "bundled",
       exclude: ["node_modules/**", "utils/**"],
     }),
-    typescript(),
+    typescript({
+      outDir: "./dist", // Output directory for types
+      declaration: true, // Generates corresponding '.d.ts' file
+      declarationDir: "./dist", // Optional: Specify the directory for the declaration files
+      rootDir: "./src", // Root directory, helps with structure preservation for declarations
+      exclude: [
+        "./node_modules/**",
+        "./utils/**",
+        "./src/icons/**",
+        "./src/toPascalCase.ts",
+      ], // Exclude test files
+    }),
     resolve(),
     commonjs(),
     terser(), // Minify the output (optional)

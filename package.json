@@ -1,11 +1,11 @@
 {
   "name": "tm-icons-library",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
   "umd:main": "dist/bundle.umd.js",
-  "types": "types/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "make-icons": "npx @svgr/cli --out-dir src/icons --filename-case kebab -- utils/svg-icons",

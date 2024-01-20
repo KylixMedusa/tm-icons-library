@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const svgDirectory = "utils/svg-icons"; // Replace with your SVG directory path
-const outputFilePath = "types/IconTypes.d.ts"; // Replace with your desired output path
+const outputFilePath = "src/IconTypes.d.ts"; // Replace with your desired output path
 
 fs.readdir(svgDirectory, (err, files) => {
   if (err) {
