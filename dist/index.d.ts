@@ -2,7 +2,7 @@ import React from 'react';
 import { IconName } from './IconTypes';
 interface Props {
     name: IconName;
-    size?: string;
+    size?: number;
     color?: string;
     className?: string;
     style?: React.CSSProperties;
