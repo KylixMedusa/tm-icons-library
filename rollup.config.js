@@ -30,7 +30,7 @@ export default {
     babel({
       extensions: [".js", ".jsx"], // Add this line
       babelHelpers: "bundled",
-      exclude: "node_modules/**",
+      exclude: ["node_modules/**", "utils/**"],
     }),
     resolve(),
     commonjs(),
